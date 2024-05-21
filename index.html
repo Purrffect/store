@@ -482,25 +482,52 @@ flex-grow: 0;
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript'></script>
-<script type='text/javascript'>
-    const productActions = document.querySelectorAll('.product-action');
+<!--<script type='text/javascript'>-->
+<!--    const productActions = document.querySelectorAll('.product-action');-->
 
-    productActions.forEach(productAction => {
-        if (window.matchMedia('(max-width: 768px)').matches) {
-            // Initially hide on mobile (optional)
-            // productAction.style.opacity = 0;
+<!--    productActions.forEach(productAction => {-->
+<!--        if (window.matchMedia('(max-width: 768px)').matches) {-->
 
-            setTimeout(() => {
-                productAction.style.opacity = 1;
-                productAction.style.bottom = "20px";
-            }, 1000);
+
+<!--            setTimeout(() => {-->
+<!--                productAction.style.opacity = 1;-->
+<!--                productAction.style.bottom = "20px";-->
+<!--            }, 1000);-->
+<!--        }-->
+<!--    });-->
+
+<!--    var myLink = document.querySelector('a[href="#"]');-->
+<!--    myLink.addEventListener('click', function (e) {-->
+<!--        e.preventDefault();-->
+<!--    });</script>-->
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if the device is touch-enabled
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
+
+        if (isTouchDevice) {
+            const productActions = document.querySelectorAll('.product-action');
+
+            productActions.forEach(productAction => {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    setTimeout(() => {
+                        productAction.style.opacity = 1;
+                        productAction.style.bottom = "20px";
+                    }, 1000);
+                }
+            });
+
+            var myLink = document.querySelector('a[href="#"]');
+            if (myLink) {
+                myLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                });
+            }
         }
     });
+</script>
 
-    var myLink = document.querySelector('a[href="#"]');
-    myLink.addEventListener('click', function (e) {
-        e.preventDefault();
-    });</script>
 
 </body>
 </html>
