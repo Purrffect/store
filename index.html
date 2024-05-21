@@ -56,7 +56,8 @@
 
     .product-wrapper, .product-img {
         overflow: hidden;
-        position: relative
+        position: relative;
+        min-width: 251px;
     }
 
     .mb-45 {
@@ -83,7 +84,8 @@
     }
 
     .product-wrapper {
-        border-radius: 10px
+        border-radius: 10px;
+
     }
 
     .product-img > span {
@@ -171,6 +173,15 @@
         transform: translate(-50%, -50%);
     }
 
+    .col {
+flex-grow: 0;
+    }
+
+    @media (max-width: 600px) {
+        .col {
+            flex-grow: 1; /* Apply flex-grow: 1 on small screens */
+        }
+    }
     </style>
 
 </head>
@@ -198,9 +209,10 @@
     <div class="row">
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img"><a href="https://s.click.aliexpress.com/e/_DEuPA8b" data-abc="true"> <img
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px"><a href="https://s.click.aliexpress.com/e/_DEuPA8b" data-abc="true"> <img
                         src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Cat-Figure.jpg" alt=""
                          height="362px">
                 </a> <span class="text-center"><i class="fa fa-dollar"></i> 13.34</span>
@@ -217,9 +229,10 @@
         <!--        product end-->
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;" >
+                <div class="product-img" style="max-width: 300px">
                     <a href="https://s.click.aliexpress.com/e/_DDqAyU3" data-abc="true"> <img
                         src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Northern-Lights.jpg" alt=""
                          height="362px">
@@ -257,9 +270,10 @@
 
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px">
                     <a href="https://s.click.aliexpress.com/e/_DCcOXib"
                        data-abc="true">
                         <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Strong-Magnetic.jpg" alt=""
@@ -296,9 +310,10 @@
         <!--        product end-->
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px">
                     <a href="https://s.click.aliexpress.com/e/_Dd1Awt5"
                        data-abc="true">
                         <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Plasma-Ball-Lamp.jpg" alt=""
@@ -336,9 +351,10 @@
         <!--        product end-->
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px">
                     <a href="https://s.click.aliexpress.com/e/_DC4oQmX"
                        data-abc="true">
                         <img src="images/Stanley-Quencher.jpg" alt=""
@@ -376,9 +392,10 @@
         <!--        product end-->
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px">
                     <a href="https://s.click.aliexpress.com/e/_DkuI05V"
                        data-abc="true">
                         <img src="images/New-Magnetic.jpg" alt=""
@@ -416,9 +433,10 @@
         <!--        product end-->
 
         <!--        product-->
-        <div class="col-md-3">
-            <div class="product-wrapper mb-45 text-center">
-                <div class="product-img">
+        <div class="col" >
+            <div class="product-wrapper mb-45 text-center" style="display: flex;
+        justify-content: center;">
+                <div class="product-img" style="max-width: 300px" >
                     <a href="https://s.click.aliexpress.com/e/_DnLjmk3"
                        data-abc="true">
                         <img src="images/LED-Night-Lights-Cute.jpg" alt=""
