@@ -187,14 +187,36 @@ flex-grow: 0;
 </head>
 <body className='snippet-body'>
 <div class="container d-flex justify-content-center mt-100" style="flex-direction: column">
+    <script>
+        // Function to update the link based on user's locale
+        function updateLinkBasedOnLocale() {
+            const userLocale = navigator.language || navigator.userLanguage;
+
+            const linkElement = document.getElementById('product-link');
+            const imgElement = document.getElementById('product-img');
+
+            if (userLocale.startsWith('en-US')) {
+                console.log("en-US")
+            } else if (userLocale.startsWith('en-GB') || userLocale.startsWith('de') || userLocale.startsWith('fr')) {
+                console.log("en-US")
+            } else if (userLocale.startsWith('id') || userLocale.startsWith('th') || userLocale.startsWith('my') || userLocale.startsWith('sg')) {
+                console.log("en-US")
+            } else {
+                console.log("en-US")
+            }
+        }
+
+        // Call the function to update the link after the page loads
+        window.onload = updateLinkBasedOnLocale;
+    </script>
 
     <div class="row" style="justify-content: center">
-        <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/icon.jpg" alt="Image Before Text"
+        <img src="images/purrfect.png" alt="Image Before Text"
              style="    border-radius: 100%;width: 67px;height: 67px;">
 
     </div>
     <div class="row" style="justify-content: center">
-        <div class="protest-guerrilla-regular" style="font-size: 42px;">WybShort</div>
+        <div class="protest-guerrilla-regular" style="font-size: 42px;padding-left: 50px">Purrfect</div>
         <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Twitter_Verified_Badge.svg.png"
              alt="Image After Text" style="    width: 29px;
     height: 29px;
